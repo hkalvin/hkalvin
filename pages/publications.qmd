@@ -2,51 +2,101 @@
 title: Publications
 ---
 
-You may want to divide your publications by type (preprints, journal articles, others) or by theme.
 
-## Sorted by type
 
-::: {.content-hidden unless-format="markdown"}
-pubs_v1_update_start
-:::
-### Preprints
+<!-- THESE LINES OF R CODE CREATE THE LIST OF ARTICLES TO CITE -->
+<!-- library("bibtex") -->
+<!-- refs = read.bib(file = "refs.bib") -->
+<!-- for (i in 1:length(refs)){ -->
+<!--   print(refs[[i]]) -->
+<!--   cat("<br><br>") -->
+<!-- } -->
 
-**Last, F.**, Author (Preprint). [Paper 4](https://arxiv.org/).
+For the most up to date list of publications, check out my <a href="https://scholar.google.com/citations?user=Gat1Du8AAAAJ&hl=en">Google Scholar</a> page.
 
-### Journal Articles
 
-**Last, F.** (2026). [Paper 3](https://doi.org). *Journal 3*.
+#### Peer-reviewed Publications
 
-Author, **Last, F.** (2024). [Paper 2](https://github.com). *Journal 2*.
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
 
-**Last, F.**, Author (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
 
-::: {.content-hidden unless-format="markdown"}
-pubs_v1_update_end
-:::
 
-## Sorted by theme
+library(tidyverse)
+df_articles <- 
+  scholar::get_publications('Gat1Du8AAAAJ') %>%
+  as_tibble() %>%
+  # delete abstracts
+  filter(
+    !is.na(year), # missing publication year
+    title != str_to_upper(title), # title is all upper case
+    !str_detect(number, fixed("Supplement")), # number contains 'Supplement'
+    !str_detect(number, fixed("_suppl")), # number contains '_suppl'
+    !str_detect(number, fixed("SUPPL")),
+    !str_detect(title, fixed("preprint")),
+    !str_detect(stringr::str_to_lower(title), fixed("abstract")),
+    !str_detect(stringr::str_to_upper(title),fixed("YIA26-003:")),
+    !str_detect(stringr::str_to_lower(title),fixed("sa1915 ")),
+    !str_detect(stringr::str_to_lower(title),fixed("96p ")),
+    !str_detect(stringr::str_to_lower(title),fixed("1102p ")),
+    !str_detect(stringr::str_to_lower(title),fixed("(vol 28, pg 978, 2023)")),
+    !str_detect(stringr::str_to_lower(title),fixed("management and outcomes of patients with recurrence of cutaneous melanoma during or after completion of adjuvant immunotherapy: a multicenter study")),
+    !str_detect(stringr::str_to_lower(title),fixed("local recurrence following management of primary merkel cell carcinoma")),
+    !str_detect(stringr::str_to_lower(title),fixed("has management of locally advanced intrahepatic cholangiocarcinoma evolved with the evidence? trends and practice patterns from the national cancer database")),
+    !str_detect(stringr::str_to_lower(title),fixed("development of a translational tumoroid-organoid platform revealing tumor-specific radiosensitization in rectal cancer using matched patient-derived models")),
+    !str_detect(stringr::str_to_lower(journal),fixed("hpb"))
+  ) 
 
-::: {.content-hidden unless-format="markdown"}
-pubs_v2_update_start
-:::
-### Statistical Methods
+df_articles <- df_articles %>%
+  # clean up authors
+  mutate(
+    journal=case_when(
+      journal=="" & title=="A phase II study of N-acetylcysteine in cancer patients with severe COVID-19: clinical outcomes and biological correlates" ~ "medRxiv",
+      journal=="ONCOLOGIST" ~ "The Oncologist",
+      journal!="medRxiv" & !stringr::str_detect(journal,"JCO") & 
+        !stringr::str_detect(journal,"HPB") & 
+        !stringr::str_detect(journal,"JAMA")~ stringr::str_to_title(journal),
+      stringr::str_detect(journal,"JAMA oncology")==TRUE ~ "JAMA Oncology",
+      TRUE ~ journal
+    )
+  ) %>% 
+  filter(journal!="") %>% 
+  distinct(title,.keep_all=TRUE) %>% 
+  mutate(
+    author = str_replace(author, fixed("..."), fixed("and others")),
+    author = 
+      case_when(
+        str_detect(author, fixed("HL Kalvin")) ~ 
+          str_replace(author, fixed("HL Kalvin"), fixed("**HL Kalvin**")),
+        str_detect(author, fixed("H Kalvin")) ~ 
+          str_replace(author, fixed("H Kalvin"), fixed("**H Kalvin**")),
+        !str_detect(author, fixed("Kalvin")) ~
+          str_replace(author, fixed("and others"), fixed("**HL Kalvin**, and others")),
+        TRUE ~ author
+      ),
+    citation = 
+      str_glue('{author} ({year}). "{title}." *{journal}, {number}*') %>%
+      as.character()
+  ) %>%
+  arrange(desc(year)) %>%
+  mutate(order = 1:nrow(.)) %>%
+  arrange(order)
 
-**Last, F.**, Author (Preprint). [Paper 4](https://arxiv.org/).
 
-**Last, F.**, Author (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
+# df_articles %>%
+#   pull(citation) %>% 
+#   paste(collapse = "<br><br>") %>%
+#   cat()
 
-### Public Health and Medicine
+df_articles %>%
+  pull(citation) %>% 
+  paste(collapse = "<br><br></li><li>") %>% 
+  paste0("<ol><li>", ., "</ol>") %>%
+  cat()
 
-Author, **Last, F.** (2024). [Paper 2](https://github.com). *Journal 2*.
-
-### Other
-
-**Last, F.** (2026). [Paper 3](https://doi.org). *Journal 3*.
-
-::: {.content-hidden unless-format="markdown"}
-pubs_v2_update_end
-:::
-
+```
 
 

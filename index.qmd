@@ -1,63 +1,39 @@
 ---
-title: Name
+title: Hannah Kalvin, MSPH
 subtitle: |
- | Position, institution
- | pronouns
- | (name pronounciation)
+ | Research Biostatistician II
+ | Memorial Sloan Kettering Cancer Center
+ | (she/her)
 
 about:
   template: trestles
   image-shape: round
   image-width: 15em
-  image: files/portrait_pic.jpg
+  image: files/HannahKalvin.jpg
   links:
     - icon: envelope
       text: Email
-      href: mailto:email
+      href: mailto:hannahlkalvin@gmail.com
     - icon: mortarboard-fill 
       text: Google Scholar
-      href: https://scholar.google.com
-    - icon: github
-      text: Github
-      href: https://github.com
+      href: https://scholar.google.com/citations?hl=en&user=Gat1Du8AAAAJ&view_op=list_works&authuser=1&sortby=pubdate
     - icon: linkedin
       text: Linkedin
-      href: https://www.linkedin.com
+      href: https://www.linkedin.com/in/hannah-kalvin-msph/
     - icon: person-vcard-fill
       text: ORCID
-      href: https://orcid.org/
+      href: https://orcid.org/0000-0002-6636-0602
      
 ---
 
-This is a template for an academic personal website. It was created with grad students and postdocs in mind, however, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites. The github repository is <https://github.com/ngalanter/academic-website-template>.
+Welcome to my page! I am a Research Biostatistician at [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/) in New York City. My current collaborations involve working with hepatic pancreatic biliary (HPB) surgeons, melanoma medical oncologists, and global breast cancer research physicians. I have experience in design and analysis of clinical trials and observational studies (retrospective and prospective). I specialize in conducting statistical analysis and visualization using both R and SAS programming languages.
 
-This template uses quarto, you can learn more about quarto websites here: <https://quarto.org/docs/websites>.
+I earned my MSPH in Biostatistics at Emory University's Rollins School of Public Health. While obtaining my degree, I conducted research for the Centers for Disease Control, Emory's Biostatistics Collaboration Core, and professors with appointments in the Department of Biostatistics and Bioinformatics, Department of Epidemiology, and Winship Cancer Center. Prior to graduate school, I worked for Statistics Collaborative (now WCG Statistics Collaborative) in Washington, DC providing support for data monitoring committees.
 
-This page uses the about page template, see details here: <https://quarto.org/docs/websites/website-about.html>. This page can be used to give an overview of yourself, and you can link [externally](https://quarto.org/docs/websites) and [internally](pages/teaching.qmd).
+In my free time, I enjoy traveling, reading, riding my Peloton, and playing the many games available on the New York Times Games app.
 
-This template uses the `minty` theme with slight color customization, to change the theme or create a custom theme go to the `_quarto.yml` file. See [here](https://quarto.org/docs/output-formats/html-themes.html) for more details about themes and see [here](https://bootswatch.com/) for a preview of what the pre-made themes generally look like.
 
-See the repository readme for more information about using this template and publishing via quarto and github pages.
 
-This goal of this template is to provide several types of pages that might be relevant, but most personal websites don't have all of these pages!
 
-### News
 
-::: {.content-hidden unless-format="markdown"}
-news_update_start
-:::
-
-Published paper **[Paper 3](https://doi.org)** in Journal 3
-
-Released preprint  **[Paper 4](https://arxiv.org/)**
-
-Exciting update here
-
-Presented poster **[Poster](https://github.com)** at Conference
-
-Published paper **[Paper 2](https://github.com)** in Journal 2
-
-::: {.content-hidden unless-format="markdown"}
-news_update_end
-:::
 

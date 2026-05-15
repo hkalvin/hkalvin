@@ -111,5 +111,8 @@
   },
   "pages/blog.qmd": {
     "blog.html": "86f320c4"
+  },
+  "pages/presentations.qmd": {
+    "presentations.html": "a6197453"
   }
 }

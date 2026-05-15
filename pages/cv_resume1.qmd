@@ -1,5 +1,5 @@
 ---
-title: Curriculum Vitae or Resume Format 1
+title: Resume
 format:
   html:
     toc: true
@@ -16,16 +16,16 @@ format:
         
         \fancyhf{}
         \rhead{\thepage}
-        \lhead{Name Name}
+        \lhead{Hannah Kalvin, MSPH}
         
         \makeatletter         
         \renewcommand\maketitle{
         \begin{center}
-        {\Large \textbf{Name Name}}\\
+        {\Large \textbf{Hannah Kalvin, MSPH}}\\
         \vspace{1mm}
-        \normalsize email\\
+        \normalsize hannahlkalvin@gmail.com\\
         \vspace{1mm}
-        Updated Month YYYY
+        Updated May 2026
         \end{center}} 
         \makeatother
      
@@ -33,125 +33,239 @@ format:
 format-links: [pdf]
 ---
 
-::: {.content-hidden when-format="pdf"}
-Just as with a standard cv or resume, use whatever headings and format makes the most sense for you. These sections are just examples. See [here](https://quarto.org/docs/authoring/markdown-basics.html) for an overview of markdown formatting in quarto.
-
-For the `mainfont:` pdf option in the header, fonts that work will generally be in 
-`~/Library/Fonts` (MacOS) or `C:\Windows\Fonts` (Windows). The pdf is rendered by the site creator so any font found on the site creator's computer can be used. See also <https://quarto.org/docs/reference/formats/pdf.html#fonts> .
-:::
-
-
 ## EDUCATION
 
-#### Instition, Location
-Degree, Field, Graduation Month YYYY
+**Master of Science in Public Health in Biostatistics**
 
-Other Details
+*Emory University, Atlanta, Georgia* [*Aug 2019 --- May 2021*]{.cvdate}
 
-#### Instition, Location
-Degree, Field, Graduation Month YYYY
+-   Relevant Coursework: Survival Analysis Methods, Modern Regression Analysis, Clinical Trials Methodology, Biostatistical Methods, Probability Theory, Applied Linear Models, Statistical Inference, Machine Learning, Statistical Practice, Epidemiology Methods
 
-Other Details
+-   Masters Capstone: "Assessing the Relationship between Breast Cancer Mortality and BMI by State and Race" (Advisor: Jeffrey Switchenko, PhD)
 
-## RESEARCH EXPERIENCE
 
-### GRADUATE STUDENT RESEARCHER
+**Bachelor of Science in Public Health, Minor in Biological Sciences (magna cum laude)**
 
-#### Project
-Institution/Company,  Month YYYY -- Month YYYY
+*The George Washington University, Washington, DC* [*Aug 2012 --- May 2016*]{.cvdate}
 
-Supervisor/Advisor/Mentor: Name (if this is relevant)
+## PROFESSIONAL EXPERIENCE
 
-- details
+### Memorial Sloan Kettering Cancer Center
 
-#### Project
-Institution/Company,  Month YYYY -- Month YYYY
+**Research Biostatistician II** [*Feb 2025 --- Present*]{.cvdate}
 
-Supervisor/Advisor/Mentor: Name (if this is relevant)
+**Research Biostatistician I** [*Sep 2022 --- Feb 2025*]{.cvdate}
 
-- details
+**Assistant Research Biostatistician** [*Jul 2021 --- Sep 2022*]{.cvdate}
 
-### UNDERGRADUATE STUDENT RESEARCHER
+-   Collaborate with clinicians and researchers from design to publication phase to answer questions relating to cancer genomics, survival outcomes, etc. using statistical analyses and visualizations
+-   Perform statistical analysis in SAS and R for Global Cancer Disparities Initiative, Hepato-Pancreatic-Biliary Surgery, and Melanoma groups
 
-#### Project
-Institution/Company,  Month YYYY -- Month YYYY
+### Emory Rollins School of Public Health
 
-Supervisor/Advisor/Mentor: Name (if this is relevant)
+**Graduate Research Assistant** [*May 2020 --- May 2021*]{.cvdate}
 
-- details
+-   Researched state/region and race-specific obesity patterns in relation to breast cancer mortality over time
+-   Compiled and analyze SEER and BRFSS data from 1990-2017 using SAS, SAS-callable SUDAAN, and R
+-   Produced tables, figures, and maps summarizing obesity and breast cancer mortality rates by state and race
+-   Analyzed relationship between breast cancer mortality count and BMI by state and race using Poisson Regression
 
-#### Project
-Institution/Company,  Month YYYY -- Month YYYY
+### Emory Biostatistics Collaboration Core
 
-Supervisor/Advisor/Mentor: Name (if this is relevant)
+**Data Analyst** [*June 2020 --- August 2020*]{.cvdate}
 
-- details
+-   Cleaned Michigan Polybrominated Biphenyls (PBB) Cohort datasets using SAS in order to make data available via a new data management platform
+-   Created data dictionaries for Michigan PBB Cohort datasets with consistent search term/field label coding
+-   Conducted power and sample size analyses for NIH grants
+-   Performed quality assurance checks on psychometric datasets
+
+### Emory Rollins School of Public Health
+
+**BIOS 500 Graduate Teaching Assistant** [*Aug 2020 --- Dec 2020*]{.cvdate}
+
+-   Created answer keys and graded assignments and exams for 105 students
+-   Assisted 105 students in learning SAS programming and statistical methods
+
+### Centers for Disease Control and Prevention
+
+**Epidemiology/Data Management Graduate Assistant** [*Nov 2019 --- May 2020*]{.cvdate}
+
+-   Analyzed 400,000 observation dataset (National Tuberculosis Surveillance System) and produced SAS summaries
+-   Composed original research proposal for analytic project based on National Tuberculosis Surveillance System
+
+### WCG Statistics Collaborative (formerly Statistics Collaborative, Inc)
+
+**Senior Research Associate** [*Jul 2018 --- Jul 2019*]{.cvdate}
+
+**Research Associate** [*Jun 2017 --- Jul 2018*]{.cvdate}
+
+**Research Assistant** [*Jun 2016 --- Jun 2017*]{.cvdate}
+
+-   Coordinated and supported several Phase 2 and Phase 3 clinical trials with indications for: heart failure, cardiovascular disease, chronic kidney disease, pediatric growth hormone treatment, and HIV
+-   Managed and led multiple projects under supervision of Statistical Scientists for: orphan neurological disorders, infectious disease, and cardiovascular disease in a genetically pre-specified population
+-   Wrote and reviewed data monitoring committee reports
+-   Prepared table, figure, and listing shells for statistical analysis plans
+-   Utilized standard SAS code and in-house macros to produce and audit graphs, tables, and listings
+-   Created and audited SAS analysis programs
+
+## SKILLS
+
+Expert: R, RStudio, SAS, Quarto, Git/GitHub, Microsoft Office Suite
+
+Proficient: Python, Joinpoint Regression, SAS-callable SUDAAN, SEER*Stat
+
+Familiar: Docker, GIS, LaTeX
+
+## CERTIFICATION
+
+SAS Certified Specialist: Base Programming Using SAS 9.4  [*Issued December 2019*]{.cvdate}
+
+
 
 ## PUBLICATIONS
 
-::: {.content-hidden unless-format="markdown"}
-cv_pub_update_start
+::: {.content-hidden when-format="pdf"}
+For the most up to date list of publications, check out my [Google Scholar](https://scholar.google.com/citations?user=Gat1Du8AAAAJ&hl=en) page.
 :::
 
-**Last, F.** (2026). [Paper 3](https://doi.org). *Journal 3*.
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
 
-**Last, F.**, Author (Preprint). [Paper 4](https://arxiv.org/).
 
-Author, **Last, F.** (2024). [Paper 2](https://github.com). *Journal 2*.
 
-**Last, F.**, Author (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
+library(tidyverse)
+df_articles <- 
+  scholar::get_publications('Gat1Du8AAAAJ') %>%
+  as_tibble() %>%
+  # delete abstracts
+  filter(
+    !is.na(year), # missing publication year
+    title != str_to_upper(title), # title is all upper case
+    !str_detect(number, fixed("Supplement")), # number contains 'Supplement'
+    !str_detect(number, fixed("_suppl")), # number contains '_suppl'
+    !str_detect(number, fixed("SUPPL")),
+    !str_detect(title, fixed("preprint")),
+    !str_detect(stringr::str_to_lower(title), fixed("abstract")),
+    !str_detect(stringr::str_to_upper(title),fixed("YIA26-003:")),
+    !str_detect(stringr::str_to_lower(title),fixed("sa1915 ")),
+    !str_detect(stringr::str_to_lower(title),fixed("96p ")),
+    !str_detect(stringr::str_to_lower(title),fixed("1102p ")),
+    !str_detect(stringr::str_to_lower(title),fixed("(vol 28, pg 978, 2023)")),
+    !str_detect(stringr::str_to_lower(title),fixed("management and outcomes of patients with recurrence of cutaneous melanoma during or after completion of adjuvant immunotherapy: a multicenter study")),
+    !str_detect(stringr::str_to_lower(title),fixed("local recurrence following management of primary merkel cell carcinoma")),
+    !str_detect(stringr::str_to_lower(title),fixed("has management of locally advanced intrahepatic cholangiocarcinoma evolved with the evidence? trends and practice patterns from the national cancer database")),
+    !str_detect(stringr::str_to_lower(title),fixed("development of a translational tumoroid-organoid platform revealing tumor-specific radiosensitization in rectal cancer using matched patient-derived models")),
+    !str_detect(stringr::str_to_lower(journal),fixed("hpb"))
+  ) 
 
-::: {.content-hidden unless-format="markdown"}
-cv_pub_update_end
-:::
+df_articles <- df_articles %>%
+  # clean up authors
+  mutate(
+    journal=case_when(
+      journal=="" & title=="A phase II study of N-acetylcysteine in cancer patients with severe COVID-19: clinical outcomes and biological correlates" ~ "medRxiv",
+      journal=="ONCOLOGIST" ~ "The Oncologist",
+      journal!="medRxiv" & !stringr::str_detect(journal,"JCO") & 
+        !stringr::str_detect(journal,"HPB") & 
+        !stringr::str_detect(journal,"JAMA")~ stringr::str_to_title(journal),
+      stringr::str_detect(journal,"JAMA oncology")==TRUE ~ "JAMA Oncology",
+      TRUE ~ journal
+    )
+  ) %>% 
+  filter(journal!="") %>% 
+  distinct(title,.keep_all=TRUE) %>% 
+  mutate(
+    author = str_replace(author, fixed("..."), fixed("and others")),
+    author = 
+      case_when(
+        str_detect(author, fixed("HL Kalvin")) ~ 
+          str_replace(author, fixed("HL Kalvin"), fixed("**HL Kalvin**")),
+        str_detect(author, fixed("H Kalvin")) ~ 
+          str_replace(author, fixed("H Kalvin"), fixed("**H Kalvin**")),
+        !str_detect(author, fixed("Kalvin")) ~
+          str_replace(author, fixed("and others"), fixed("**HL Kalvin**, and others")),
+        TRUE ~ author
+      ),
+    citation = 
+      str_glue('{author} ({year}). "{title}." *{journal}, {number}*') %>%
+      as.character()
+  ) %>%
+  arrange(desc(year)) %>%
+  mutate(order = 1:nrow(.)) %>%
+  arrange(order)
 
-## TEACHING EXPERIENCE
+
+# df_articles %>%
+#   pull(citation) %>% 
+#   paste(collapse = "<br><br>") %>%
+#   cat()
+
+df_articles %>%
+  pull(citation) %>% 
+  paste(collapse = "<br><br></li><li>") %>% 
+  paste0("<ol><li>", ., "</ol>") %>%
+  cat()
+
+```
 
 ## PRESENTATIONS AND POSTERS
 
-::: {.content-hidden unless-format="markdown"}
-cv_pres_update_start
-:::
 ### Presentations
 
-| **Talk 2**
-| Meeting, Place, October 2025
-| 
-| **[Talk 1](https://www.wikipedia.org/)**
-| Conference, Place, May 2024
-| Seminar, Place, March 2024
+| **Expanding biostatistics research and training efforts beyond MSK - A global health initiative**
+| Seminar for Memorial Sloan Kettering Department of Epidemiology and Biostatistics, New York, NY, November 2025
 
-### Posters
+| **Linear Regression II: Regression Diagnostics**
+| Lecture for Obafemi Awolowo University (Ile Ife, Nigeria), Virtual, May 2024
 
-| **[Poster](https://github.com)**
-| Conference, Place, July 2025
+| **Linear Regression I: Introduction and Assumptions**
+| Lecture for Obafemi Awolowo University (Ile Ife, Nigeria), Virtual, May 2024
 
-::: {.content-hidden unless-format="markdown"}
-cv_pres_update_end
-:::
+### Poster
+
+| **Real-world evidence following a clinical trial: An application in biliary tract cancer**
+| Society for Clinical Trials Annual Meeting, Boston, MA, May 2024
 
 ## PROFESSIONAL SERVICE
 
-### Institution
+**Society for Clinical Trials**
 
-Role, Committee/Group, Month YYYY -- Month YYYY
+*Program Committee Member* [*2025 --- present*]{.cvdate}
 
-Role, Committee/Group, Month YYYY -- Month YYYY
+-   Review and select applications for sessions at annual meeting
+-   Ensure sessions represent diverse interests
+-   Choose poster award recipients
 
-### Institution/National Organization
+*Member* [*2023 --- present*]{.cvdate}
 
-Role, Committee/Group, Month YYYY -- Month YYYY
+**Memorial Sloan Kettering Bridge to Biostats**
 
-### Reviewer
+*Member* [*2021 --- present*]{.cvdate}
 
-Journal
+-   Co-lead 8th grade and high school “Biostats Days” to introduce students to biostatistics
+-   Mentor high school students part of the Bridge to Biostats Summer Program (B2BSP)
+-   Teach introduction to R Studio for high school students in B2BSP
 
+**Peer Reviewer**
+
+Cell Reports Medicine
+
+Nature Communications
+
+## COMMUNITY SERVICE
+
+**Cycle for Survival**
+
+*Team Captain* [*2025 --- 2026*]{.cvdate}
+
+| Lead fundraising efforts for department team (Team Bell Curve)
+
+*Team member* [*2021 --- 2025*]{.cvdate}
 
 ::: {.content-hidden when-format="html"}
 ## References
-Available upon request
-:::
 
-::: {.content-hidden when-format="pdf"}
-HTML/PDF formatting option inspired by [this page](https://www.cynthiahqy.com/posts/cv-html-pdf/).
+Available upon request
 :::

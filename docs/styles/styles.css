@@ -1,1 +1,5 @@
 /* css styles */
+.cvdate {
+  float: right;
+  font-style: italic
+}
