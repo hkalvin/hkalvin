@@ -49,7 +49,7 @@ df_articles <-
     !str_detect(stringr::str_to_lower(title),fixed("development of a translational tumoroid-organoid platform revealing tumor-specific radiosensitization in rectal cancer using matched patient-derived models")),
     !str_detect(stringr::str_to_lower(journal),fixed("hpb")),
     !str_detect(stringr::str_to_lower(title),fixed("evaluation of the implementation of enhanced recovery after surgery pathways in pancreatic surgery")),
-    !str_detect(stringr::str_to_lower(title),fixed("hepatic artery infusion pump placement technical complication and salvage rate")) ## will need to fix this once manuscript is published 
+    !str_detect(stringr::str_to_lower(title),fixed("hepatic artery infusion pump placement technical complication and salvage rate")) ## fix this once manuscript is published 
   ) 
 
 df_articles <- df_articles %>%
